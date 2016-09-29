@@ -2529,3 +2529,42 @@ declare module "aws-sdk" {
     }
   }
 }
+
+export declare class ELBv2 {
+  constructor(options?: any);
+  endpoint: Endpoint;
+  addTags(params:any, callback: (err: AwsError, data: any) => void ):void;
+  createListener(params:any, callback: (err: AwsError, data: any) => void ):void;
+  createLoadBalancer(params:any, callback: (err: AwsError, data: any) => void ):void;
+  createRule(params:any, callback: (err: AwsError, data: any) => void ):void;
+  createTargetGroup(params:any, callback: (err: AwsError, data: any) => void ):void;
+  deleteListener(params:any, callback: (err: AwsError, data: any) => void ):void;
+  deleteLoadBalancer(params:any, callback: (err: AwsError, data: any) => void ):void;
+  deleteRule(params:any, callback: (err: AwsError, data: any) => void ):void;
+  deleteTargetGroup(params:any, callback: (err: AwsError, data: any) => void ):void;
+  deregisterTargets(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeListeners(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeLoadBalancerAttributes(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeLoadBalancers(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeRules(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeSSLPolicies(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeTags(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeTargetGroupAttributes(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeTargetGroups(params:any, callback: (err: AwsError, data: any) => void ):void;
+  describeTargetHealth(params:any, callback: (err: AwsError, data: any) => void ):void;
+  modifyListener(params:any, callback: (err: AwsError, data: any) => void ):void;
+  modifyLoadBalancerAttributes(params:any, callback: (err: AwsError, data: any) => void ):void;
+  modifyRule(params:any, callback: (err: AwsError, data: any) => void ):void;
+  modifyTargetGroup(params:any, callback: (err: AwsError, data: any) => void ):void;
+  modifyTargetGroupAttributes(params:any, callback: (err: AwsError, data: any) => void ):void;
+  registerTargets(params:any, callback: (err: AwsError, data: any) => void ):void;
+  removeTags(params:any, callback: (err: AwsError, data: any) => void ):void;
+  setRulePriorities(params:any, callback: (err: AwsError, data: any) => void ):void;
+  setSecurityGroups(params:any, callback: (err: AwsError, data: any) => void ):void;
+  setSubnets(params:any, callback: (err: AwsError, data: any) => void ):void;
+  makeRequest(operation:String, params:any, callback: (err: AwsError, data: any) => void ):void;
+  makeUnauthenticatedRequest(operation:String, params:any, callback: (err: AwsError, data: any) => void ):void;
+  waitFor(state:String, params:any, callback: (err: AwsError, data: any) => void ):void;
+  setupRequestListeners():void;
+  defineService(serviceIdentifier:String, versions:String[], features:any):any;
+}
